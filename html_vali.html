@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="form_vali.css">
+  <title>html form Validation without JS</title>
+</head>
+<body>
+  <form>
+
+    <h1>Beautiful Form with Validation</h1>
+    <label for="name">Name (only letters, more than 3 characters):</label>
+    <input id="name" type="text" required pattern="^[a-zA-Z]{4,}$" title="Name must contain only letters and be more than 4 characters">
+    <label for="email-input">Email Input:</label>
+    <input id="email-input" type="email" required>
+  
+    <label for="password-input">Password Input:</label>
+    <input id="password-input" type="password" required>
+  
+    <label for="checkbox-input">Checkbox Input:</label>
+    <input id="checkbox-input" type="checkbox" required>
+  
+    <label for="radio-input1">Radio Input 1:</label>
+    <input id="radio-input1" type="radio" name="radio-group" required>
+    <label for="radio-input2">Radio Input 2:</label>
+    <input id="radio-input2" type="radio" name="radio-group" required>
+  
+    <label for="textarea-input">Textarea Input:</label>
+    <textarea id="textarea-input" required></textarea>
+  
+    <label for="select-input">Select Input:</label>
+    <select id="select-input" required>
+      <option value="">Select an option</option>
+      <option value="option1">Option 1</option>
+      <option value="option2">Option 2</option>
+    </select>
+  
+    <label for="date-input">Date Input:</label>
+    <input id="date-input" type="date" required>
+  
+    <label for="file-input">File Input:</label>
+    <input id="file-input" type="file" required>
+  
+    <input type="submit" value="Submit">
+  </form>
+
+
+</body>
+</html>
